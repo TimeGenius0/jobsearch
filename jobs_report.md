@@ -1,0 +1,4 @@
+| Company | Search date | Job URL | Job description |
+| --- | --- | --- | --- |
+| Sila | 2026-03-03 | https://job-boards.greenhouse.io/silananotechnologies/jobs/7600405 | About Us We are Sila, a next-generation battery materials company. Our mission is to power the world’s transition to clean energy. To create this future, our team is building a better lithium-ion batt... |
+| Sila | 2026-03-03 | https://job-boards.greenhouse.io/silananotechnologies/jobs/7592340 | About Us We are Sila, a next-generation battery materials company. Our mission is to power the world’s transition to clean energy. To create this future, our team is building a better lithium-ion batt... |

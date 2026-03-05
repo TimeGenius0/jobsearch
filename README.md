@@ -42,17 +42,23 @@ The script loads `.env` automatically. Do not commit `.env` (it is in `.gitignor
    - Put target companies in `companies.md`.
    - Put your job criteria in `criteria.md`.
 
-2. **Install and configure**
+2. **Install and configure** (Python 3.10+ required; 3.9 will fail with `str | None` errors)
    ```bash
+   # Recreate venv with Python 3.10+ if you get "Unable to evaluate type annotation 'str | None'"
+   rm -rf .venv
+   python3.12 -m venv .venv   # or python3.11, python3.10
+   source .venv/bin/activate
    pip install -r requirements.txt
    cp .env.example .env
    # Edit .env and set BROWSER_USE_API_KEY and CLAUDE_API_KEY
    ```
 
-3. **Run**
+3. **Run** (use the project venv so dependencies are available)
    ```bash
+   source .venv/bin/activate
    python job_search.py
    ```
+   Or: `./run.sh`
 
 4. **Output**
    - The LLM formulates a task per company, then the Browser Use service runs it.
@@ -71,7 +77,7 @@ The script loads `.env` automatically. Do not commit `.env` (it is in `.gitignor
 
 ## Requirements
 
-- Python 3.9+
+- **Python 3.10+** (browser-use-sdk uses type syntax that requires 3.10+)
 - Browser Use API key (for the web service)
 - Claude (Anthropic) API key (for the LLM workflow)
 # jobsearch
