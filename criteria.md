@@ -5,11 +5,14 @@ Only include jobs that match these criteria. The script will use this to filter 
 ## Job titles / roles (any of these)
 - Product 
 
-## Keywords in description (preferred; jobs should relate to at least one)
-- remote
+## Criteria
+- Mid senior to senior : including lead, staff, senior staff, senior lead, principal product 
 
 ## Exclusions (skip jobs that are primarily)
-
+- product marketing
+- product design
+- product analyst
+- product engineer
 
 ## Other
 

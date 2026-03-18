@@ -199,24 +199,28 @@ Return a JSON object with a "jobs" array. Each job: {{"job_url": "...", "job_des
             run_result = await client.run(task, output_schema=JobList)
             output = run_result.output if hasattr(run_result, "output") else None
 
-            if output and isinstance(output, JobList) and output.jobs:
-                jobs = [
-                    {
-                        "company_name": company,
-                        "search_date": search_date,
-                        "job_url": j.job_url,
-                        "job_description": j.job_description,
-                    }
-                    for j in output.jobs
-                ]
-                log.info("Web-use result for %s: %d job(s)", company, len(jobs))
-                for i, j in enumerate(jobs):
-                    log.info("  [%s] job %d: url=%s desc_len=%d", company, i + 1, j["job_url"], len(j.get("job_description", "")))
-                return jobs
+            if output and isinstance(output, JobList):
+                if output.jobs:
+                    jobs = [
+                        {
+                            "company_name": company,
+                            "search_date": search_date,
+                            "job_url": j.job_url,
+                            "job_description": j.job_description,
+                        }
+                        for j in output.jobs
+                    ]
+                    log.info("Web-use result for %s: %d job(s)", company, len(jobs))
+                    for i, j in enumerate(jobs):
+                        log.info("  [%s] job %d: url=%s desc_len=%d", company, i + 1, j["job_url"], len(j.get("job_description", "")))
+                    return jobs
+                else:
+                    log.info("Web-use result for %s: 0 job(s) found", company)
+                    return []
 
             # Fallback: parse raw text
-            raw = getattr(run_result, "output", None) or str(run_result)
-            log.info("Web-use raw result for %s:\n%s", company, raw[:2000] + ("..." if len(str(raw)) > 2000 else ""))
+            raw = str(getattr(run_result, "output", None) or run_result)
+            log.info("Web-use raw result for %s:\n%s", company, raw[:2000] + ("..." if len(raw) > 2000 else ""))
             if "{" in raw and "}" in raw:
                 start, end = raw.find("{"), raw.rfind("}") + 1
                 data = json.loads(raw[start:end])

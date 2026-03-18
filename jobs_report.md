@@ -1,4 +1,3 @@
 | Company | Search date | Job URL | Job description |
 | --- | --- | --- | --- |
-| Sila | 2026-03-03 | https://job-boards.greenhouse.io/silananotechnologies/jobs/7600405 | About Us We are Sila, a next-generation battery materials company. Our mission is to power the world’s transition to clean energy. To create this future, our team is building a better lithium-ion batt... |
-| Sila | 2026-03-03 | https://job-boards.greenhouse.io/silananotechnologies/jobs/7592340 | About Us We are Sila, a next-generation battery materials company. Our mission is to power the world’s transition to clean energy. To create this future, our team is building a better lithium-ion batt... |
+| Pecan AI | 2026-03-18 | https://www.pecan.ai/careers/product-manager | Product Manager at Pecan Ai (View all jobs) Pecan is an automated AI-based predictive analytics platform. It simplifies and accelerates the process of building and deploying machine learning models in... |
