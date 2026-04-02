@@ -1,0 +1,12 @@
+Paste the plain text of the LinkedIn profile you want to personalise a cold message to.
+
+The easiest way to get this:
+1. Open the person's LinkedIn profile in your browser
+2. Select all text on the page (Ctrl+A / Cmd+A)
+3. Copy and paste it here, replacing this placeholder text
+
+The cold_outreach.py script reads this file when you pass --linkedin-file path/to/file.txt
+It uses the content to tailor the opening line and reference shared context.
+
+You can keep multiple files here (e.g. john_doe.txt, jane_smith.txt) — just reference
+whichever one you need at run time.

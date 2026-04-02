@@ -1,0 +1,40 @@
+{
+  "personalInfo": {
+    "firstName": "Your First Name",
+    "lastName": "Your Last Name",
+    "email": "you@example.com",
+    "phone": "+1-555-000-0000",
+    "linkedin": "https://linkedin.com/in/your-handle",
+    "github": "https://github.com/your-username"
+  },
+  "location": {
+    "city": "City",
+    "state": "CA",
+    "country": "USA",
+    "zipCode": "00000",
+    "address": "123 Your Street, City, CA 00000"
+  },
+  "work": {
+    "currentTitle": "Your Current Title",
+    "currentCompany": "Your Current Company",
+    "yearsExperience": 10,
+    "resumePath": "/absolute/path/to/bot/data/resume.pdf",
+    "coverLetterPath": "/absolute/path/to/bot/data/cover-letter.docx"
+  },
+  "education": {
+    "degree": "Your Degree",
+    "university": "Your University",
+    "graduationYear": 2015
+  },
+  "preferences": {
+    "workAuthorization": "US Citizen",
+    "willingToRelocate": false,
+    "remotePreference": "remote",
+    "requiresVisaSponsorship": false
+  },
+  "diversity": {
+    "race": "do not disclose",
+    "veteran": "not veteran",
+    "disability": "None"
+  }
+}

@@ -1,0 +1,40 @@
+# Environment & secrets
+.env
+*.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Editor
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Generated outputs
+output/
+jobs_report.csv
+jobs_report.md
+
+# Browser automation
+bot/screenshots/
+bot/browseruse_agent_data/
+
+# Personal & sensitive data
+bot/data/*
+!bot/data/*.template.json
+!bot/data/*.template.txt
+bot/applications/
+config/template/
